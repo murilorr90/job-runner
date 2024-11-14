@@ -123,4 +123,5 @@ return [
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
 
+    'retry_count' => env('RETRY_COUNT', 0),
 ];

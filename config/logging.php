@@ -51,6 +51,17 @@ return [
     */
 
     'channels' => [
+        'joblog' => [
+            'driver' => 'single',
+            'path' => storage_path('logs/background-jobs.log'),
+            'level' => 'debug',
+        ],
+
+        'joberror' => [
+            'driver' => 'single',
+            'path' => storage_path('logs/background-jobs-error.log'),
+            'level' => 'error',
+        ],
 
         'stack' => [
             'driver' => 'stack',
