@@ -42,10 +42,6 @@ php artisan serve
 ```terminal
 php artisan startJob {CLASSNAME} {FUNCTION} --params={PARAMS} --delay={NUMBER_IN_SECONDS} --high-priority
 ```
-```terminal
-// Examples
-php artisan startJob {CLASSNAME} {FUNCTION} --params={PARAMS} --delay={NUMBER_IN_SECONDS} --high-priority
-```
 ### Some rules
 - Class and method must exist inside \App\Services folder;
 - You can use _**runBackgroundJob**_ function in any part of the project;
